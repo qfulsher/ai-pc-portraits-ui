@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html class="h-full bg-gray-100">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DND character portraits</title>
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js" integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+</head>
+
+<body class="h-full">
+    <div class="min-h-full">
+
+        <header class="bg-white shadow">
+            <div class="mx-auto max-w-7xl py-6 px-4 sm:px-6 lg:px-8">
+                <h1 class="text-3xl font-bold tracking-tight text-gray-900">Player Description</h1>
+            </div>
+        </header>
+        <main>
+            <div class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
+                <div class="flex flex-row flex-wrap">
+                    <div class="basis-1/2">
+                        <form id="description-form">
+                            <div class="my-3">
+                                <label for="race">Race</label>
+                                <input type="text" name="race" id="race"/>
+                            </div>
+                            <div class="my-3">
+                                <label for="class">Class</label>
+                                <input type="text" name="class" id="class"/>
+                            </div>
+                            <div class="my-3">
+                                <label for="weapon">Weapon</label>
+                                <input type="text" name="weapon" id="weapon"/>
+                            </div>
+                            <div class="my-3">
+                                <label for="demeanor">Demeanor</label>
+                                <input type="text" name="demeanor" id="demeanor"/>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="flex flex-column basis-1/2 flex-wrap">
+                        <label class="basis-full" for="prompt">Character description</label>
+                        <textarea name="prompt" id="prompt" cols="50" rows="5"></textarea>
+                    </div>
+                    <div class="basis-full">
+                        <hr class="my-4 border-slate-400"/>
+                        <button class="bg-sky-500 hover:bg-sky-600 active:bg-sky-700 p-1 drop-shadow rounded text-white">Get Portraits</button>
+                        <div class="px-4 py-6 sm:px-0">
+                            <div class="h-96 rounded-lg border-4 border-dashed border-gray-200"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+<script src="index.js"></script>
+
+</html>
